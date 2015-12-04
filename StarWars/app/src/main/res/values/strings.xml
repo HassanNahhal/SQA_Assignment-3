@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StarWars</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="trooper_id">Trooper ID  : </string>
+    <string name="plant_name">Planet Name : </string>
+    <string name="send_trooper">Send Trooper</string>
+
+
+</resources>
