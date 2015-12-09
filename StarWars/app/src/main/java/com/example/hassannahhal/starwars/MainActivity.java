@@ -60,9 +60,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                 dbcon.open();
 
                 Troopers trooper = new Troopers();
+                trooper.setId(trooper.getId());
                 trooper.setPlantName(spinnerChoice);
-
                 dbcon.insertData(trooper.getPlantName());
+                Log.d("dbcon.getLastId():  ", " " + dbcon.getLastId());
                 Log.d("Trooper planet", trooper.getPlantName());
                 refresh();
                 dbcon.close();

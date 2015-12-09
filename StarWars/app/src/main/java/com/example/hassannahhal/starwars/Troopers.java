@@ -8,8 +8,8 @@ public class Troopers {
     private String plantName;
     private int id;
 
-    public Troopers(String name, int id) {
-        this.plantName = name;
+    public Troopers(int id) {
+        //this.plantName = name;
         this.id = id;
     }
 
@@ -28,8 +28,8 @@ public class Troopers {
         return id;
     }
 
-    public void setId() {
-        this.id = id + 1;
+    public void setId(int lastId) {
+        this.id = lastId + 1;
     }
 
 

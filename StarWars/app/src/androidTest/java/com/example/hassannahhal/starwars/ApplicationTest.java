@@ -50,9 +50,7 @@ public class ApplicationTest extends ActivityInstrumentationTestCase2<MainActivi
             solo.clickOnView(solo.getView(TextView.class, randInt()));
 
             solo.clickOnView(solo.getView(R.id.button));
-
         }
-
     }
 
     public int randInt() {

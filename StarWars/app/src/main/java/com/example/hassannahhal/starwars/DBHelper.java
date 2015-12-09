@@ -10,7 +10,7 @@ public class DBHelper extends SQLiteOpenHelper {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
-    public static final String TABLE_TROOPER = "User";
+    public static final String TABLE_TROOPER = "TROOPER_TABLE";
     public static final String TROOPER_ID = "_id";
     public static final String TROOPER_STAR = "TROOPER_STAR";
 

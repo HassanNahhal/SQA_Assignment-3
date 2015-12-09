@@ -11,6 +11,8 @@ public class SQLController {
     private DBHelper dbhelper;
     private Context ourcontext;
     private SQLiteDatabase database;
+    public static final String TABLE_TROOPER = "TROOPER_TABLE";
+
 
     public SQLController(Context C) {
         ourcontext = C;
@@ -57,5 +59,14 @@ public class SQLController {
 
     }
 
+    public int getLastId() {
+        int lastId = 0;
+        Cursor cursor = this.database.rawQuery("SELECT MAX(_ID) from "+TABLE_TROOPER, null);
+        if (cursor.moveToLast()) {
+            lastId = cursor.getInt(0);
+        }
+
+        return lastId;
+    }
 
 }
